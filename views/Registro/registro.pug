@@ -1,0 +1,28 @@
+extends ../layout
+
+block content
+
+    link(rel='stylesheet', href='/stylesheets/Registro/registro.css')
+
+    .form-left
+        img(src="../../images/Principal/Logo.png" id="iconoUsuario" width="300px" height="300px")
+        label#linkedPost LinkedPost
+        label#descripcion Registrarte solo te toma 1 minuto
+
+    .form-right
+    a(href="http://localhost:3000/")
+        img(src="../../images/Login/boton-de-retroceso.png" id="retroceso" width="45px" height="45px")
+
+    .form-right-box
+        form(action="/users/add" method="POST")
+            label#registroLabel Registro Gratis
+            input(type="text" name="fullname" placeholder="Nombre Completo" width="200" height="200" id="fullname" required="fullname")
+            input(type="text" name="username" placeholder="Ingrese nombre de usuario" width="200" height="200" id="username" required="username")
+            input(type="password" name="password" placeholder="ingrese su contraseña" width="200" height="200" id="password" required="password")
+            input(type="submit" value="Aceptar" id="botonAceptar")
+            if(message && message.length > 0)
+                p(class="alert alert-danger" id="mensaje_error_login") #{message}
+
+
+
+

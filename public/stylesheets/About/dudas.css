@@ -1,0 +1,92 @@
+.form-top{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 40%;
+    width: 100%;
+    background-color: #167B71;
+}
+
+#retroceso{
+    position: absolute;
+    top: 10%;
+    right: 2.5%;
+}
+
+#enlace{
+    position: absolute;
+    top: 20%;
+    left: 46%;
+}
+
+#linkedPost{
+    position: absolute;
+    top: 84%;
+    left: 45%;
+    font-family: Cambria;
+    font-size: 30px;
+    color: white;
+}
+
+.form-center{
+    position: absolute;
+    left: 0%;
+    top: 40%;
+    height: 20%;
+    width: 100%;
+    background-color: #167B71;
+}
+
+#iconoMas{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+}
+
+#iconoEliminar{
+    position: absolute;
+    top: 50%;
+    left: 48%;
+}
+
+#iconoEditar{
+    position: absolute;
+    top: 50%;
+    left: 83%;
+}
+
+.form-down{
+    position: absolute;
+    left: 0%;
+    top: 60%;
+    height: 40%;
+    width: 100%;
+    background-color: #167B71;
+}
+
+#Mas{
+    position: absolute;
+    top: 10%;
+    left: 7%;
+    font-family: Cambria;
+    font-size: 25px;
+    color: white;
+}
+
+#Eliminar{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    font-family: Cambria;
+    font-size: 25px;
+    color: white;
+}
+
+#Editar{
+    position: absolute;
+    top: 10%;
+    left: 72.5%;
+    font-family: Cambria;
+    font-size: 25px;
+    color: white;
+}

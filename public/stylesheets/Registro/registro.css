@@ -1,0 +1,108 @@
+.form-left{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #167B71;
+}
+
+#mensaje_error_login{
+    position: absolute;
+    width:60%;
+    top:88%;
+    left: 20%;
+}
+
+#iconoUsuario{
+    left: 30%;
+    top: 10%;
+    position: absolute;
+    width: 40%; height: 40%;
+}
+
+#linkedPost{
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    font-size: 50px;
+    font-family: Cambria;
+    color: white;
+}
+
+#descripcion{
+    position: absolute;
+    left: 17%;
+    top: 82%;
+    font-size: 30px;
+    font-family: Cambria;
+    color: white;
+}
+
+.form-right-box{
+    position: absolute;
+    top: 14%;
+    width: 35%;
+    height: 75%;
+    left: 58%;
+    background-color: #24323D;
+    border-radius: 52px;
+}
+
+#fullname{
+    position: absolute;
+    margin-top: 22%;
+    left: 13%;
+    width: 70%; height: 8%;
+    border-radius: 15px;
+}
+
+#username{
+    position: absolute;
+    margin-top: 42%;
+    left: 13%;
+    width: 70%; height: 8%;
+    border-radius: 15px;
+}
+
+#password{
+    position: absolute;
+    margin-top: 61%;
+    left: 13%;
+    width: 70%; height: 8%;
+    border-radius: 15px;
+}
+
+#botonAceptar{
+    position: absolute;
+    width: 80%;
+    height: 8%;
+    margin-top: 80%;
+    left: 10%;
+    border-radius: 15px;
+    background-color: #1AB188;
+}
+
+#registroLabel{
+    position: absolute;
+    left: 32%;
+    top: 5%;
+    font-family: Cambria;
+    font-size: 25px;
+    color: white;
+}
+
+.form-right{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background-color: white; //puedo cambiar de color
+}
+
+#retroceso{
+    position: absolute;
+    top: 3%;
+    left: 90%;
+}

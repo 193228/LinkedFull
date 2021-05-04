@@ -1,0 +1,49 @@
+extends ../layout
+
+block content
+
+    link(rel='stylesheet', href='/stylesheets/APP/inApp.css')
+
+    .form-left
+        each sql in user
+            label#Recomendaciones Recomendaciones
+            a(href="http://google.com" id="categoria") Agregar Categoria
+            a(href="http://localhost:3000/links/add")
+                img(src="../../images/App/mas (1).png" id="iconoMas" width="100px" height="100px")
+                a(href="/links/logout" id="cerrarSesion") Cerrar Sesion
+                if(message && message.length > 0)
+                    .alert.alert-warning.alert-dismissible.fade.show(role='alert' id = "mensaje_error_login") #{message}
+                        button.close(type='button' data-dismiss='alert' aria-label='Close')
+                            span(aria-hidden='true') ×
+
+    .form-links
+        each sql in links
+            .col-md3
+                input(type="submit" value="Aceptar" id="buscador")
+                a#link(target=sql.url href=sql.url) #{sql.title}
+                p#descripcion #{sql.description}
+                a(href="links/edit/" +sql.idlinks)
+                    img(src="../../images/App/editar.png" id="editar" width="15px" height="15px")
+                    a(href="links/delete/" +sql.idlinks)
+                        img(src="../../images/App/eliminar.png" id="eliminar" width="15px" height="15px")
+
+    .Carrusel
+        #carouselExampleControls.carousel.slide(data-ride='carousel')
+            .carousel-inner
+                .carousel-item.active
+                    img.d-block.w-100(src='../../images/Recomendaciones_Links/amazon.png' alt='Amazon' id="amazon")
+                .carousel-item
+                    img.d-block.w-100(src='../../images/Recomendaciones_Links/paypal.png' alt='Paypal' id="paypal")
+                .carousel-item
+                    img.d-block.w-100(src='../../images/Recomendaciones_Links/facebook.png' alt='Paypal' id="facebook")
+                .carousel-item
+                    img.d-block.w-100(src='../../images/Recomendaciones_Links/Wikipedia.png' alt='Paypal' id="wikipedia")
+                .carousel-item
+                    img.d-block.w-100(src='../../images/Recomendaciones_Links/youtube.png' alt='Paypal' id="youtube")
+
+            a.carousel-control-prev(href='#carouselExampleControls' role='button' data-slide='prev')
+                span.carousel-control-prev-icon(aria-hidden='true')
+                span.sr-only Previous
+            a.carousel-control-next(href='#carouselExampleControls' role='button' data-slide='next')
+                span.carousel-control-next-icon(aria-hidden='true')
+                span.sr-only Next

@@ -1,0 +1,65 @@
+.form-top{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 40%;
+    width: 100%;
+    background-color: #167B71;
+}
+
+#retroceso{
+    position: absolute;
+    top: 10%;
+    right: 2.5%;
+}
+
+#enlace{
+    position: absolute;
+    top: 20%;
+    left: 46%;
+}
+
+#linkedPost{
+    position: absolute;
+    top: 84%;
+    left: 45%;
+    font-family: Cambria;
+    font-size: 30px;
+    color: white;
+}
+
+.form-center{
+    position: absolute;
+    left: 0%;
+    top: 40%;
+    height: 35%;
+    width: 100%;
+    background-color: #167B71;
+}
+
+#center{
+    position: absolute;
+    left: 25%;
+    top: 20%;
+    font-family: Cambria;
+    font-size: 25px;
+    color: white;
+}
+
+.form-down{
+    position: absolute;
+    left: 0%;
+    top: 75%;
+    height: 25%;
+    width: 100%;
+    background-color: #167B71;
+}
+
+#down{
+    position: absolute;
+    left: 25%;
+    top: 30%;
+    font-family: Cambria;
+    font-size: 25px;
+    color: #E6FF00;
+}

@@ -1,0 +1,51 @@
+extends ../layout
+
+block content
+
+    link(rel='stylesheet', href='/stylesheets/About/dudas.css')
+
+    .form-top
+        a(href="http://localhost:3000/")
+            img(src="../../images/About/boton-de-retroceso.png" id="retroceso" width="45px" height="45px")
+        img(src="../../images/About/Logo.png" id="enlace" width="150px" height="150px")
+        label#linkedPost Linked Post
+
+    .form-center
+        img(src="../../images/About/mas (1).png" id="iconoMas" width="45px" height="45px")
+        img(src="../../images/About/eliminar.png" id="iconoEliminar" width="45px" height="45px")
+        img(src="../../images/About/editar.png" id="iconoEditar" width="45px" height="45px")
+
+    .form-down
+
+        p#Mas
+            | El siguiente botón tiene la
+            br
+            | función de agregar un
+            br
+            | enlace, únicamente
+            br
+            | presiona el botón y llena
+            br
+            | los datos requeridos
+
+        p#Eliminar
+            | El siguiente botón tiene la
+            br
+            | función de eliminar un
+            br
+            | enlace, únicamente se va
+            br
+            | hacia el enlace que quiera
+            br
+            | eliminar y presiona el boton
+
+        p#Editar
+            | El siguiente botón tiene la
+            br
+            | función de editar algun
+            br
+            | enlace que quiera, únicamente
+            br
+            | presione el boton y despues
+            br
+            | modifique los datos que desee

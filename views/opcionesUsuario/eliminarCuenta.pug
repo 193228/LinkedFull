@@ -1,0 +1,23 @@
+extends ../layout
+
+block content
+
+    link(rel='stylesheet', href='/stylesheets/opcionesUsuario/eliminoCuenta.css')
+
+    .form-left
+        img(src="../../images/Principal/Logo.png" id="iconoUsuario" width="300px" height="300px")
+        label#linkedPost LinkedPost
+        label#descripcion Todos tus links en una sola plataforma
+
+    .form-right
+    a(href="http://localhost:3000/users/login")
+        img(src="../../images/Login/boton-de-retroceso.png" id="retroceso" width="45px" height="45px")
+
+    .form-right-box
+        form(action="/users/elimino" method="POST")
+            img(src="../../images/Login/perfil.png" id="perfil" width="150px" height="150px")
+            input(type="text" name="username" placeholder="ingrese su usuario" width="200" height="200" id="username" required="username", autofocus=)
+            input(type="password" name="password" placeholder="ingrese su contraseña" width="200" height="200" id="password" required="password")
+            input(type="submit" value="Aceptar" id="botonAceptar")
+            if(message && message.length>0)
+                p(class="alert alert-danger" id="mensaje_error_login") #{message}

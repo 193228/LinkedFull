@@ -1,0 +1,44 @@
+extends ../layout
+
+block content
+
+  link(rel='stylesheet', href='/stylesheets/Principal/style.css')
+
+  .form-top
+    label#labelLink Linked
+    label#labelPost Post
+    img(src="../../images/Principal/Logo.png" id="iconoUsuario" width="60px" height="60px")
+    a(href="http://localhost:3000/dudas" id="dudas") Dudas
+    a(href="http://localhost:3000/acercaDe" id="acercaDe") Acerca de
+    a(href="http://localhost:3000/users/register" id="registro") Registrarse
+    a(href="http://localhost:3000/users/login" id="logueo") Loguearse
+
+  .form-center
+    img(src="../../images/Principal/persona.png" id="iconoInicio" width="300px" height= "300px")
+    img(src="../../images/Principal/lock.png" id="iconoLock" width="150px" height= "150px")
+    img(src="../../images/Principal/cifrado.png" id="iconoCifrado" width="150px" height= "150px")
+
+  label#enlacesFavoritos Tus enlaces favoritos en una sola plataforma
+  label#contrasenasCifradas Contraseña cifrada
+  label#seguridadPremium Seguridad Premium
+
+
+  .form-down-left
+    img(src="../../images/Principal/fb.png" id="logoFb" width="80px" height= "80px")
+    img(src="../../images/Principal/paypal.png" id="logoPaypal" width="80px" height= "80px")
+    img(src="../../images/Principal/amazon.png" id="logoAmazon" width="80px" height= "80px")
+    label#fb Tus sitios favoritos
+    label#paypal Tus servicios favoritos
+    label#amazon Tus tiendas favoritas
+
+
+  .form-down-right
+    img(src="../../images/Principal/enlace (1).png" id="logoFacil" width="80px" height= "80px")
+    img(src="../../images/Principal/velocimetro.png" id="logoEficiente" width="80px" height= "80px")
+    img(src="../../images/Principal/gratis.png" id="logoGratis" width="80px" height= "80px")
+    label#facil Facil Uso
+    label#eficiente Sistema eficiente
+    label#gratis Totalmente gratis
+
+
+

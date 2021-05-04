@@ -1,0 +1,13 @@
+extends ../layout
+
+block content
+
+    link(rel='stylesheet', href='/stylesheets/APP/Agregar.css')
+
+    .form-box
+        form(action="/links/edit/"+link.idlinks method="POST")
+            label#txt Edita tus enlaces aca
+            input(type="text" value=link.title name="title" placeholder="Titulo" id="title" required="Titulo")
+            input(type="url" value=link.url name="url" placeholder="URL" id="url" required="URL")
+            input(type="text" value=link.description name="description" placeholder="Descripcion" id="description")
+            input(type="submit" value="Aceptar" id="botonAceptar")

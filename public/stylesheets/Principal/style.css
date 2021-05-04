@@ -1,0 +1,233 @@
+.form-top{
+  position: absolute;
+  width: 100%;
+  height: 12%;
+  top: 0%;
+  right: 0;
+  background-color: #167B71;
+}
+
+#labelLink{
+  position: absolute;
+  font-family: Cambria;
+  font-size: 30px;
+  color: white;
+  top: 15%;
+  left: 8%;
+}
+
+#labelPost{
+  position: absolute;
+  font-family: Cambria;
+  font-size: 30px;
+  color: white;
+  top: 50%;
+  left: 9%;
+}
+
+#iconoUsuario{
+  position: absolute;
+  left: 2%;
+  top: 20%;
+}
+
+#dudas{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  font-family: Cambria;
+  font-size: 25px;
+  color: white;
+}
+
+#acercaDe{
+  position: absolute;
+  top: 30%;
+  left: 60%;
+  font-family: Cambria;
+  font-size: 25px;
+  color: white;
+}
+
+#registro{
+  position: absolute;
+  top: 30%;
+  left: 72.5%;
+  font-family: Cambria;
+  font-size: 25px;
+  color: white;
+}
+
+#logueo{
+  position: absolute;
+  top: 30%;
+  left: 85%;
+  font-family: Cambria;
+  font-size: 25px;
+  color: white;
+}
+
+.form-center{
+  position: absolute;
+  width: 100%;
+  height: 110%;
+  top: 12%;
+  right: 0;
+  background-color: #167B71;
+}
+
+#iconoInicio{
+  position: absolute;
+  margin-top: 7%;
+  left: 41%;
+}
+
+#iconoLock{
+  position: absolute;
+  margin-top: 12%;
+  left: 19%;
+}
+
+#iconoCifrado{
+  position: absolute;
+  margin-top: 12%;
+  left: 72%;
+}
+
+#enlacesFavoritos{
+  position: absolute;
+  font-family: Cambria;
+  color: white;
+  font-size: 50px;
+  left: 19%;
+  margin-top: 41%;
+}
+
+#contrasenasCifradas{
+  position: absolute;
+  font-family: Cambria;
+  color: white;
+  font-size: 30px;
+  left: 16%;
+  margin-top: 29%;
+}
+
+#seguridadPremium{
+  position: absolute;
+  font-family: Cambria;
+  color: white;
+  font-size: 30px;
+  left: 70%;
+  margin-top: 28%;
+}
+
+.form-down-left{
+  position: absolute;
+  right: 0;
+  top: 122%;
+  width: 50%;
+  height: 60%;
+  left: 0%;
+  background-color: #ffffff;
+}
+
+#logoFb{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+#logoPaypal{
+  position: absolute;
+  top: 42%;
+  left: 10%;
+}
+
+#logoAmazon{
+  position: absolute;
+  top: 70%;
+  left: 10%;
+}
+
+#fb{
+  position: absolute;
+  top: 14%;
+  left: 28%;
+  font-family: Cambria;
+  color: black;
+  font-size: 35px;
+}
+
+#paypal{
+  position: absolute;
+  top: 45%;
+  left: 28%;
+  font-family: Cambria;
+  color: black;
+  font-size: 35px;
+}
+
+#amazon{
+  position: absolute;
+  top: 73%;
+  left: 28%;
+  font-family: Cambria;
+  color: black;
+  font-size: 35px;
+}
+
+.form-down-right{
+  position: absolute;
+  right: 0;
+  top: 122%;
+  width: 50%;
+  height: 60%;
+  left: 50%;
+  background-color: #498CF3;
+}
+
+#logoFacil{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+#logoEficiente{
+  position: absolute;
+  top: 38%;
+  left: 10%;
+}
+
+#logoGratis{
+  position: absolute;
+  top: 67%;
+  left: 10%;
+}
+
+#facil{
+  position: absolute;
+  top: 14%;
+  left: 28%;
+  font-family: Cambria;
+  color: white;
+  font-size: 35px;
+}
+
+#eficiente{
+  position: absolute;
+  top: 45%;
+  left: 28%;
+  font-family: Cambria;
+  color: white;
+  font-size: 35px;
+}
+
+#gratis{
+  position: absolute;
+  top: 73%;
+  left: 28%;
+  font-family: Cambria;
+  color: white;
+  font-size: 35px;
+}
+

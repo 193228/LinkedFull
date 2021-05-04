@@ -1,0 +1,19 @@
+extends ../layout
+
+block content
+
+    link(rel='stylesheet', href='/stylesheets/APP/Agregar.css')
+
+    .form-box
+        select(name='lista' id="lista" required="lista")
+            each sql in categories
+                option #{sql.nombreCategoria}
+        form(action="/links/validate" method="POST")
+            label#txt Agrega tus enlaces aca
+            label#Escoga Escoja categoria
+            input(type="text" name="title" placeholder="Titulo" id="title" required="Titulo")
+            input(type="url" name="url" placeholder="URL" id="url" required="URL")
+            input(type="text" name="description" placeholder="Descripcion" id="description")
+            input(type="submit" value="Aceptar" id="botonAceptar")
+
+

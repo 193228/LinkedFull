@@ -1,0 +1,59 @@
+body{
+    background-color: #167B71;
+}
+
+.form-box{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width: 40%; height: 60%;
+    background-color: #24323D;
+    border-radius: 40px;
+}
+
+#txt{
+    position: absolute;
+    top: 8%;
+    left: 32%;
+    font-size: 20px;
+    font-family: Cambria;
+    color: white;
+}
+
+#title{
+    position: absolute;
+    top: 25%;
+    left: 18%;
+    width: 60%;
+    height: 8%;
+    border-radius: 30px;
+}
+
+#url{
+    position: absolute;
+    top: 45%;
+    left: 18%;
+    width: 60%;
+    height: 8%;
+    border-radius: 30px;
+}
+
+#description{
+    position: absolute;
+    top: 65%;
+    left: 18%;
+    width: 60%;
+    height: 8%;
+    border-radius: 30px;
+}
+
+#botonAceptar{
+    position: absolute;
+    top: 85%;
+    left: 15%;
+    width: 70%;
+    height: 8%;
+    border-radius: 30px;
+    background-color: #1AB188;
+}
+
