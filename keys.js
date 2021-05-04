@@ -1,12 +1,12 @@
 module.exports = {
 
     database: {
-        host: 'us-cdbr-east-02.cleardb.com',
-        user: 'ba458576fa1077',
-        password: '892f28d2',
-        database: 'heroku_5cb3be35c353b8f'
+        host: 'us-cdbr-east-03.cleardb.com',
+        user: 'bce52159627b0d',
+        password: '3c96ab1d',
+        database: 'heroku_c530dff0de5d0bf'
     }
 
 }
 
-//'mysql://b0ae49e202dc6c:960674a3@us-cdbr-east-02.cleardb.com/heroku_0d2a2701ae92213?reconnect=true'
+//mysql://bce52159627b0d:3c96ab1d@us-cdbr-east-03.cleardb.com/heroku_c530dff0de5d0bf?reconnect=true
