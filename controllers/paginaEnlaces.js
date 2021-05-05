@@ -20,6 +20,7 @@ const pageEnlaces = async function (req, res) {
 
 const pageEnlaces_Agregar = async function (req,res) {
     if(req.isAuthenticated()){
+        console.log("VER")
         res.render('APP/Agregar', { title: "agregar" } )
         res.end()
     }else{
@@ -35,6 +36,7 @@ const pageEnlace_Validar = async function (req,res) {
     excedio.tituloExcedio(req,res,addLink);
     excedio.descripcionExcedio(req,res,addLink);
     excedio.titulo_descripcion_excedio(req,res,addLink)
+    console.log("No lo hizo?")
     linkDao.insertLink(addLink,(data) =>{res.redirect("/links")})
 }
 
