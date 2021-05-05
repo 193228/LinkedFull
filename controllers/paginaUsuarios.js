@@ -14,6 +14,7 @@ passport.use(new passportLocal( (username,password,done)=> {
     userDao.findUser(username,(data) =>{
         if(data && bcrypt.compareSync(password,data.password)){
                 id_link = data.idusers;
+                console.log(id_link)
                 passport.deserializeUser((id,done) => done (null, {id:data.idusers, name:data.username})); //aca tengo que obtener el objeto a pasar
                 passport.serializeUser((user,done) => done (null,{id:user.id,name:user.name}));
                 return done(null, {id:data.idusers, name:data.username})

@@ -13,6 +13,8 @@ module.exports = {
         let descripcion = '"' + link.description + '"';
         let idUsuario = '"' + link.id + '"';
 
+        console.log("el id usuario es: "+idUsuario)
+
         let sql = "insert into links (title, url, description, iduser) values (" + titulo + ',' + url + ',' + descripcion + ',' + idUsuario +  ")"
         pool.query(sql,(err,data)=>{
             if(err) throw err;

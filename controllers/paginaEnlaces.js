@@ -10,8 +10,7 @@ const pageEnlaces = async function (req, res) {
     if (req.isAuthenticated()) {
         let message = req.flash ('message');
         const links = await pool.query('select * from links where iduser = ' + id_link) // id
-        const user = await pool.query('select * from users where idusers = ' + id_link) // id
-        res.render('APP/inApp', {links: links, user: user, title: "Inicio",message})
+        res.render('APP/inApp', {links: links, title: "Inicio",message})
         res.end()
     } else {
         res.render("Principal/index", {title: "LinkedPost"})
@@ -30,7 +29,7 @@ const pageEnlaces_Agregar = async function (req,res) {
 
 const pageEnlace_Validar = async function (req,res) {
     const {title,url,description} = req.body
-    let id = req.user.id;
+    let id = id_link;
     console.log(req.user.id)
     const addLink = {title,url,description,id}
     excedio.tituloExcedio(req,res,addLink);
