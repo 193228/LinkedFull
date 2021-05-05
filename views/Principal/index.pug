@@ -4,14 +4,18 @@ block content
 
   link(rel='stylesheet', href='/stylesheets/Principal/style.css')
 
+  //-let host = "http://localhost:3000"
+  -let host = "https://linkedpost.herokuapp.com"
+
+
   .form-top
     label#labelLink Linked
     label#labelPost Post
     img(src="../../images/Principal/Logo.png" id="iconoUsuario" width="60px" height="60px")
-    a(href=host+"dudas" id="dudas") Dudas
-    a(href=host+"acercaDe" id="acercaDe") Acerca de
-    a(href=host+"users/register" id="registro") Registrarse
-    a(href=host+"users/login" id="logueo") Loguearse
+    a(href=host+"/dudas" id="dudas") Dudas
+    a(href=host+"/acercaDe" id="acercaDe") Acerca de
+    a(href=host+"/users/register" id="registro") Registrarse
+    a(href=host+"/users/login" id="logueo") Loguearse
 
   .form-center
     img(src="../../images/Principal/persona.png" id="iconoInicio" width="300px" height= "300px")

@@ -4,12 +4,14 @@ block content
 
     link(rel='stylesheet', href='/stylesheets/APP/inApp.css')
 
+    //-let host = "http://localhost:3000"
+    -let host = "https://linkedpost.herokuapp.com"
+
     .form-left
-        each sql in user
-            label#Recomendaciones Recomendaciones
-            a(href=host+"links/add")
-                img(src="../../images/App/mas (1).png" id="iconoMas" width="100px" height="100px")
-                a(href="/links/logout" id="cerrarSesion") Cerrar Sesion
+        label#Recomendaciones Recomendaciones
+        a(href=host+"/links/add")
+            img(src="../../images/App/mas (1).png" id="iconoMas" width="100px" height="100px")
+            a(href=host+"/links/logout" id="cerrarSesion") Cerrar Sesion
                 if(message && message.length > 0)
                     .alert.alert-warning.alert-dismissible.fade.show(role='alert' id = "mensaje_error_login") #{message}
                         button.close(type='button' data-dismiss='alert' aria-label='Close')

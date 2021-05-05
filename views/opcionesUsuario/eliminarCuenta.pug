@@ -4,13 +4,17 @@ block content
 
     link(rel='stylesheet', href='/stylesheets/opcionesUsuario/eliminoCuenta.css')
 
+    //-let host = "http://localhost:3000"
+    -let host = "https://linkedpost.herokuapp.com"
+
+
     .form-left
         img(src="../../images/Principal/Logo.png" id="iconoUsuario" width="300px" height="300px")
         label#linkedPost LinkedPost
         label#descripcion Todos tus links en una sola plataforma
 
     .form-right
-    a(href=host+"users/login")
+    a(href=host+"/users/login")
         img(src="../../images/Login/boton-de-retroceso.png" id="retroceso" width="45px" height="45px")
 
     .form-right-box

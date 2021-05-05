@@ -4,6 +4,10 @@ block content
 
     link(rel='stylesheet', href='/stylesheets/Login/login.css')
 
+    //-let host = "http://localhost:3000"
+    -let host = "https://linkedpost.herokuapp.com"
+
+
     .form-left
         img(src="../../images/Principal/Logo.png" id="iconoUsuario" width="300px" height="300px")
         label#linkedPost LinkedPost
@@ -21,5 +25,5 @@ block content
             input(type="submit" value="Aceptar" id="botonAceptar")
             if(message && message.length > 0)
                 p(class="alert alert-danger" id="mensaje_error_login") #{message}
-        a(href=host+"users/login/cambioContrasena" id="cambioContraseña") Cambiar Contraseña
-        a(href=host+"users/login/eliminoCuenta" id="eliminarCuenta") Eliminar mi cuenta
+        a(href=host+"/users/login/cambioContrasena" id="cambioContraseña") Cambiar Contraseña
+        a(href=host+"/users/login/eliminarCuenta" id="eliminarCuenta") Eliminar mi cuenta
