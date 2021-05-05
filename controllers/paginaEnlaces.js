@@ -19,8 +19,7 @@ const pageEnlaces = async function (req, res) {
 
 const pageEnlaces_Agregar = async function (req,res) {
     if(req.isAuthenticated()){
-        const categories = await pool.query('select * from categories') // id
-        res.render('APP/Agregar', { title: "agregar", categories:categories} )
+        res.render('APP/Agregar', { title: "agregar" } )
         res.end()
     }else{
         res.render("Principal/index", {title: "LinkedPost"})
@@ -28,9 +27,14 @@ const pageEnlaces_Agregar = async function (req,res) {
 }
 
 const pageEnlace_Validar = async function (req,res) {
+    const {title,url,description} = req.body
+    let id = req.user.id;
+    console.log(req.user.id)
+    const addLink = {title,url,description,id}
     excedio.tituloExcedio(req,res,addLink);
     excedio.descripcionExcedio(req,res,addLink);
     excedio.titulo_descripcion_excedio(req,res,addLink)
+    linkDao.insertLink(addLink,(data) =>{res.redirect("/links")})
 }
 
 const pageEnlace_editarEnlace = async function (req,res) {

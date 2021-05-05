@@ -7,7 +7,6 @@ block content
     .form-left
         each sql in user
             label#Recomendaciones Recomendaciones
-            a(href="http://google.com" id="categoria") Agregar Categoria
             a(href="http://localhost:3000/links/add")
                 img(src="../../images/App/mas (1).png" id="iconoMas" width="100px" height="100px")
                 a(href="/links/logout" id="cerrarSesion") Cerrar Sesion
@@ -19,7 +18,6 @@ block content
     .form-links
         each sql in links
             .col-md3
-                input(type="submit" value="Aceptar" id="buscador")
                 a#link(target=sql.url href=sql.url) #{sql.title}
                 p#descripcion #{sql.description}
                 a(href="links/edit/" +sql.idlinks)
