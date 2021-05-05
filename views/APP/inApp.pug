@@ -7,7 +7,7 @@ block content
     .form-left
         each sql in user
             label#Recomendaciones Recomendaciones
-            a(href="http://localhost:3000/links/add")
+            a(href=host+"links/add")
                 img(src="../../images/App/mas (1).png" id="iconoMas" width="100px" height="100px")
                 a(href="/links/logout" id="cerrarSesion") Cerrar Sesion
                 if(message && message.length > 0)

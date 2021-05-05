@@ -9,6 +9,7 @@ const bcrypt = require('bcrypt');
 const saltRounds = 10;
 const User = require('../public/javascripts/UsuarioValidacion')
 var idlink
+var host = "https://linkedpost.herokuapp.com/"
 
 passport.use(new passportLocal( (username,password,done)=> {
     userDao.findUser(username,(data) =>{
@@ -33,7 +34,7 @@ const validacion = router.post("/validate",passport.authenticate('local',  {
 
 const pageRegistro = function (req,res){
     let message = req.flash ('message');
-    res.render('Registro/registro',{title: "Registro",message})
+    res.render('Registro/registro',{title: "Registro" ,message, host})
     res.end();
 }
 
@@ -45,17 +46,17 @@ const pageRegistro_agregarUsuario = function(req,res){
 
 const pageLogin = function (req,res){
     let message = req.flash ('error');
-    res.render('Login/login', {title:"Login",message})
+    res.render('Login/login', {title:"Login" ,message, host})
 }
 
 const pageUpdate_cambioContrasena = function(req,res){
     let message = req.flash ('message');
-    res.render('opcionesUsuario/cambiarContrasena', {title:"Login",message})
+    res.render('opcionesUsuario/cambiarContrasena', {title:"Login",message,host})
 }
 
 const pageUpdate_eliminoCuenta = function(req,res){
     let message = req.flash ('message');
-    res.render('opcionesUsuario/eliminarCuenta', {title:"Login",message})
+    res.render('opcionesUsuario/eliminarCuenta', {title:"Login",message,host})
 }
 
 const pageUpdate_cambioContrasena_action = function (req,res){

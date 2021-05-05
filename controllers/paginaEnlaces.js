@@ -4,13 +4,15 @@ var app = express();
 const pool = require("../config/database");
 const linkDao = require ('../models/links')
 const excedio = require('../public/javascripts/restriccionCampo')
+var host = "https://linkedpost.herokuapp.com/"
+
 
 const pageEnlaces = async function (req, res) {
     if (req.isAuthenticated()) {
         let message = req.flash ('message');
         const links = await pool.query('select * from links where iduser = ' + id_link) // id
         const user = await pool.query('select * from users where idusers = ' + id_link) // id
-        res.render('APP/inApp', {links: links, user: user, title: "Inicio",message})
+        res.render('APP/inApp', {links: links, user: user, title: "Inicio",message, host})
         res.end()
     } else {
         res.render("Principal/index", {title: "LinkedPost"})
